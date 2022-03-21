@@ -10,6 +10,9 @@ float promedio(float Monto[' '][' '],int m,int n,int col,int fila,int dec);
 
  main()
 {
+    int rep=0;
+    do
+    { 
     float Monto[' '][' '];
     int m,n,sm;
     int dec;
@@ -39,8 +42,11 @@ float promedio(float Monto[' '][' '],int m,int n,int col,int fila,int dec);
     {
         promedio(Monto,m,n,10,3,dec);
     }
-     
-    getch();
+    cout<<" "<<endl;
+    cout<<"Deseas repetir el programa? 1.-Si"<<endl;
+    cin>>rep;
+    system("cls");
+     } while (rep==1);
 }
 
 void entrada(float Monto[' '][' '],int m,int n,int col, int fila){
